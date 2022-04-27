@@ -71,8 +71,8 @@ def detect(img,factor,OUT_PATH):
     frame=[]
     num=0
     # To read darknet module using config file and yolov4 weights
-    net = cv2.dnn.readNet("./model/custom-yolov4-detector_8000.weights", 
-                          "./model/custom-yolov4-detector.cfg")
+    net = cv2.dnn.readNet("custom-yolov4-detector_8000.weights", 
+                          "custom-yolov4-detector.cfg")
 
     #Reading class names
     classes = ['wall','column','staircase','door','window','floor']
